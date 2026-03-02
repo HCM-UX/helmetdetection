@@ -1,0 +1,13 @@
+# FastAPI后端核心依赖
+fastapi>=0.104.0          # Web框架（替代Flask，支持异步+自动API文档）
+uvicorn>=0.24.0           # ASGI服务器（运行FastAPI）
+python-multipart>=0.0.6   # 处理文件上传
+
+# YOLO模型依赖
+ultralytics>=8.0.0        # YOLOv8官方库（加载/推理模型）
+numpy>=1.24.0             # 数值计算（模型推理必备）
+Pillow>=10.0.0            # 图片处理（PIL，读取/转换图片）
+
+# 可选依赖（提升稳定性）
+python-dotenv>=1.0.0      # 环境变量管理（可选，方便配置）
+loguru>=0.7.2             # 更友好的日志（可选，替换原生logging）
